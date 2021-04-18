@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if(btn){
             btn.addEventListener('click',function() {
                 let miliSec = new Date() - startTime;
-                let elapsedTime = miliSec/1000;
+                let elapsedTimed = miliSec/1000;
                 document.write(elapsedTime + "Seconds.")
             })
             //document.write(elapsedTime)
