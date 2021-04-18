@@ -9,6 +9,10 @@
             "js": ["content.js"]
         }
     ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage"],
     "browser_action": {
         "default_popup": "popup.html",
         "default_title": "Bear"
