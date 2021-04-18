@@ -1,9 +1,16 @@
 {
-    "name" : "Beach Hacks 21",
+    "name" : "BeachHacks21",
     "description": "Just for Fun!",
     "version": "1.0",
-    "manifest_version": 3,
-    "background": {
-        "service_Worker": "background.js"
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Bear"
     }
 }
